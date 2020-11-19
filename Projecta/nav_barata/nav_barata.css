@@ -1,13 +1,12 @@
-body{
-    background-image: url(../tier/pictures/inicial.jpg);
-    background-repeat: no-repeat;
-     background-size: 1600px 650px;
-     height:600px ;
+body {
+  background-image: url(pictures/inicial.jpg);
+  background-repeat: no-repeat;
+  background-size: 1600px 650px;
+  height: 600px;
 }
 
-#text{
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    
+#text {
+  color: white;
+  text-align: center;
+  font-size: 50px;
 }
