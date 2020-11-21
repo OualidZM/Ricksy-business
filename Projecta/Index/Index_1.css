@@ -87,7 +87,7 @@ footer:hover{
 
 
 
-footer:hover ~ #fot_2{
+footer > #fot_2:hover{
     transform: translate(-50px,-150px);  
     opacity: 100%;
     background-color:green;
