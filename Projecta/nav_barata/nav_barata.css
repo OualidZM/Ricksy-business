@@ -1,12 +1,132 @@
 body {
+  background-color: black;
   background-image: url(pictures/inicial.jpg);
   background-repeat: no-repeat;
-  background-size: 1600px 650px;
-  height: 600px;
+  background-size: 100%;
+  height: 100%;
 }
 
 #text {
   color: white;
   text-align: center;
   font-size: 50px;
+}
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+/* Style each of the sides 
+    with a fixed width and height */
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+  /* Calculate the total width on the 
+    basis of number of slides */
+  width: calc(728px * 4);
+  transition: opacity $fade-time ease;
+
+  /* Specify the animation with the 
+    duration and speed */
+  animation: slide 15s ease infinite;
+}
+
+/* Set the background color 
+    of each of the slides */
+.slide:nth-child(1) {
+  background: green;
+}
+
+.slide:nth-child(2) {
+  background: pink;
+}
+
+.slide:nth-child(3) {
+  background: red;
+}
+
+/* Define the animation 
+    for the slideshow */
+@keyframes slide {
+  /* Calculate the margin-left for 
+    each of the slides */
+  20% {
+    margin-left: 0px;
+  }
+
+  40% {
+    margin-left: calc(-728px * 1);
+  }
+
+  60% {
+    margin-left: calc(-728px * 2);
+  }
+}
+#slideshow1 {
+  overflow: hidden;
+  height: 75px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+/* Style each of the sides 
+    with a fixed width and height */
+.slide1 {
+  float: left;
+  height: 75px;
+  width: 728px;
+}
+
+/* Add animation to the slides */
+.slide-wrapper1 {
+  /* Calculate the total width on the 
+    basis of number of slides */
+  width: calc(728px * 4);
+  transition: opacity $fade-time ease;
+
+  /* Specify the animation with the 
+    duration and speed */
+  animation: slide 15s ease infinite;
+}
+
+/* Set the background color 
+    of each of the slides */
+.slide1:nth-child(1) {
+  text-align: center;
+  background: green;
+}
+
+.slide1:nth-child(2) {
+  text-align: center;
+  background: pink;
+}
+
+.slide1:nth-child(3) {
+  text-align: center;
+  background: red;
+}
+
+/* Define the animation 
+    for the slideshow */
+@keyframes slide {
+  /* Calculate the margin-left for 
+    each of the slides */
+  20% {
+    margin-left: 0px;
+  }
+
+  40% {
+    margin-left: calc(-728px * 1);
+  }
+
+  60% {
+    margin-left: calc(-728px * 2);
+  }
 }
