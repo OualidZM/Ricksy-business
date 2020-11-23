@@ -1,0 +1,81 @@
+body{
+    background-color: yellowgreen;
+   
+}
+
+#nombre-nave{
+    text-align: center;
+    font-size: 60px;
+    transform: translate(220px,10px);
+    width: 800px;
+    font-family: 'Stalinist One', cursive;
+    
+    
+    
+}
+
+#logo{
+    display: flex;
+    width: 250px;
+    height: 150px;
+    transform: translate(1030px,-150px);
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+    position: fixed;
+    border: transparent 5px solid;
+    border-radius: 30%;
+   
+    
+  }
+  #logo:hover{
+    border: skyblue 5px solid;
+    padding-left:20px ;
+    background-color: red;
+    padding-right: 20px;
+  }
+
+
+#nav-barata-1{
+    height: 400px;
+    width: 600px;
+    border-radius: 10%;
+    transform: translate(30px,50px);
+    display: flex;
+    position: fixed;
+    
+    
+}
+
+#description-product{
+    transform: translate(700px,100px);
+    width: 450px;
+    height: 200px;
+    position: fixed;
+}
+
+#reser-now{
+transform: translate(780px,350px);
+    background-color:transparent;
+    width: 230px;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    border: white 5px solid;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+    
+}
+
+#reser-now:hover{
+    background-color: white;
+    color: green;
+    border: transparent 5px solid;
+    border-radius: 20%;
+    
+}
+
+a{
+    text-decoration: none;
+}

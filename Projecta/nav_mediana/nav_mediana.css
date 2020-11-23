@@ -1,132 +1,101 @@
 body {
-  background-color: black;
-  background-image: url(pictures/inicial.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 100%;
-}
-
-#text {
-  color: white;
-  text-align: center;
-  font-size: 50px;
-}
-#slideshow {
-  overflow: hidden;
-  height: 510px;
-  width: 728px;
-  margin: 0 auto;
-}
-
-/* Style each of the sides 
-        with a fixed width and height */
-.slide {
-  float: left;
-  height: 510px;
-  width: 728px;
-}
-
-/* Add animation to the slides */
-.slide-wrapper {
-  /* Calculate the total width on the 
-        basis of number of slides */
-  width: calc(728px * 4);
-  transition: opacity $fade-time ease;
-
-  /* Specify the animation with the 
-        duration and speed */
-  animation: slide 15s ease infinite;
-}
-
-/* Set the background color 
-        of each of the slides */
-.slide:nth-child(1) {
-  background: green;
-}
-
-.slide:nth-child(2) {
-  background: pink;
-}
-
-.slide:nth-child(3) {
-  background: red;
-}
-
-/* Define the animation 
-        for the slideshow */
-@keyframes slide {
-  /* Calculate the margin-left for 
-        each of the slides */
-  20% {
-    margin-left: 0px;
+    background-color: rgb(179, 255, 0);
+    background-repeat: no-repeat;
+    background-size: 5000px 650px;
+    height: 600px;
   }
-
-  40% {
-    margin-left: calc(-728px * 1);
+  
+  #naves_pequeñas{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Stalinist One', cursive;
+    
+    width: 600px;
+    transform: translate(350px,20px);
+    
   }
-
-  60% {
-    margin-left: calc(-728px * 2);
+  #logo{
+    display: flex;
+    width: 250px;
+    height: 150px;
+    transform: translate(1050px,-100px);
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+    position: fixed;
+    border: transparent 5px solid;
+    border-radius: 30%;
+    
   }
-}
-#slideshow1 {
-  overflow: hidden;
-  height: 75px;
-  width: 728px;
-  margin: 0 auto;
-}
-
-/* Style each of the sides 
-        with a fixed width and height */
-.slide1 {
-  float: left;
-  height: 75px;
-  width: 728px;
-}
-
-/* Add animation to the slides */
-.slide-wrapper1 {
-  /* Calculate the total width on the 
-        basis of number of slides */
-  width: calc(728px * 4);
-  transition: opacity $fade-time ease;
-
-  /* Specify the animation with the 
-        duration and speed */
-  animation: slide 15s ease infinite;
-}
-
-/* Set the background color 
-        of each of the slides */
-.slide1:nth-child(1) {
-  text-align: center;
-  background: green;
-}
-
-.slide1:nth-child(2) {
-  text-align: center;
-  background: pink;
-}
-
-.slide1:nth-child(3) {
-  text-align: center;
-  background: red;
-}
-
-/* Define the animation 
-        for the slideshow */
-@keyframes slide {
-  /* Calculate the margin-left for 
-        each of the slides */
-  20% {
-    margin-left: 0px;
+  #logo:hover{
+    border: skyblue 5px solid;
+    padding-left:20px ;
+    background-color: red;
+    padding-right: 20px;
   }
-
-  40% {
-    margin-left: calc(-728px * 1);
+  
+  #div-nav-peq-1 {
+    width: 400px;
+    height: 433px;
+    line-height: 0px;
+    color: transparent; font-size: 50px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+    font-size: 20px;
+    display: flex;
+    
+    
+    /*
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;*/
+    
+    }
+    #div-nav-peq-1:hover {
+    line-height: 70px;
+    color: #575858;
+    }
+    #div-nav-peq-1 img{ float: left;
+    margin: 0 15px;
+    }
+  img{
+    height: 400px;
+    width: 400px;
   }
-
-  60% {
-    margin-left: calc(-728px * 2);
+  
+  #div-nav-peq-2 {
+    
+    width: 400px;
+    height: 333px;
+    line-height:0px;
+    color: transparent;
+    font-size: 50px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+    font-size: 20px;
+    display: flex;
+    
+    /*
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;*/
+    
+    }
+    #div-nav-peq-2:hover {
+    line-height: 60px;
+    color: #575858;
+      
+    }
+    #div-nav-peq-2 img{ float: left;
+    margin: 0 15px;
+    }
+  img{
+    height: 400px;
+    width: 400px;
   }
-}
