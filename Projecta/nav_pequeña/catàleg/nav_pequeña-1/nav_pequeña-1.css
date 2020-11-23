@@ -73,4 +73,9 @@ transform: translate(780px,350px);
     color: green;
     border: transparent 5px solid;
     border-radius: 20%;
+    
+}
+
+a{
+    text-decoration: none;
 }
