@@ -18,22 +18,22 @@ h2{
     padding-top: 40px;
     text-align: center;
     font-family: 'Anton', sans-serif;
-    color: rgb(184, 89, 0);
+    color: white;
     background-color: transparent;
     padding-bottom: 20px;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
     width: 150px;
-    transition: 1s;
+    transition: 0.3s;
     transition-timing-function: ease-out;
     transform: translate(599px,280px);
-    border:rgb(33, 235, 157) 5px solid;
+    border:white 5px solid;
 }
 
 h2:hover{
     border-radius: 30px;
-    box-shadow: rgb(33, 235, 157) 0px 22px 70px 4px;
+    box-shadow: rgb(255, 153, 0) 0px 22px 70px 4px;
     
     border: white 5px solid;
         
