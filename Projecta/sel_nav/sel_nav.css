@@ -1,13 +1,142 @@
 body{
-    background-image: url(../tier/pictures/inicial.jpg);
+    background-image: url(../sel_nav/pictures/fondo--gala.jpg);
     background-repeat: no-repeat;
-     background-size: 1600px 650px;
+     background-size: 1400px 660px;
      height:600px ;
-}
-
-#text{
-    color: white;
-    text-align: center;
-    font-size: 50px;
+    transition: 0.1s;
+    transition-timing-function: ease-out;
     
 }
+
+#section_naves{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Stalinist One', cursive;
+    
+    width: 600px;
+    transform: translate(350px,20px);
+    
+}
+#logo{
+    display: flex;
+    width: 250px;
+    height: 150px;
+    transform: translate(1050px,-100px);
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+    position: fixed;
+    border: transparent 5px solid;
+    border-radius: 30%;
+    
+}
+#logo:hover{
+    border: skyblue 5px solid;
+    padding-left:20px ;
+    background-color: red;
+    padding-right: 20px;
+}
+
+
+#nau_P{
+    background-color: transparent;
+    border-radius: 10%;
+    padding: 25px;
+    width:250px;
+    height:330px;
+    float: left;
+    transform: translate(50px,80px);
+    transition: 0.1s;
+    transition-timing-function: ease-out;
+    position:fixed;
+    
+    
+}
+
+#nau_P:hover{
+    background-color: black;
+    border:white 5px solid;
+    
+}
+
+#text_nav_peq{
+    color: white;
+    text-align: center;
+    width: 290px;
+    transform: translate(-15px,120px);
+    font-weight:lighter;
+    font-family: 'Stalinist One', cursive;
+    font-size: 20px;
+}
+
+#link-style-p{
+    text-decoration: none;
+}
+
+
+#nau_M{
+    background-color: transparent;
+    border-radius: 10%;
+    padding: 25px;
+    width:250px;
+    height:330px;
+    float: left;
+    transform: translate(500px,80px);
+    transition: 0.1s;
+    transition-timing-function: ease-out;
+    position:fixed;
+    
+    
+}
+
+#nau_M:hover{
+    background-color: black;
+    border:white 5px solid;
+    
+}
+
+#text_nav_med{
+    color: white;
+    text-align: center;
+    transform: translate(0px,130px);
+    font-weight:lighter ;
+    font-family: 'Stalinist One', cursive;
+    font-size: 20px;
+}
+
+#link-style-m{
+    text-decoration: none;
+}
+
+#nau_G{
+    background-color: transparent;
+    border-radius: 10%;
+    padding: 25px;
+    width:250px;
+    height:330px;
+    float: left;
+    transform: translate(900px,80px);
+    color: white;
+    transition: 0.1s;
+    transition-timing-function: ease-out;
+}
+
+#nau_G:hover{
+    background-color: black;
+    border:white 5px solid;
+    
+}
+
+#text_nav_gra{
+    color: white;
+    text-align: center;
+    transform: translate(0px,140px);
+    font-weight:lighter ;
+    font-family: 'Stalinist One', cursive;
+    font-size: 20px;
+}
+
+#link-style-g{
+    text-decoration: none;
+}
+
