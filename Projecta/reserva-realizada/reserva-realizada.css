@@ -27,14 +27,15 @@ body{
     border: white 0px solid;
     transition: 0.1s;
     transition-timing-function: ease-out;
-    transform: rotate(0deg);
+    
     
 }
 
 #buton-menu-princip:hover{
-    background-color: white;
+    
     border: black 5px  solid;
-    transform: rotate(20deg);
+    box-shadow: rgb(255, 153, 0) 0px 22px 70px 4px;
+    
     color: black;
 
     
