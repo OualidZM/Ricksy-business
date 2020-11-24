@@ -1,0 +1,137 @@
+body{
+    background-image: url(pictures/UFOO.jpg);
+   background-repeat: no-repeat;
+    background-size: 1600px 650px;
+    height:600px ;
+}
+
+
+h1{
+    color: yellowgreen;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+}
+
+h2{
+    font-size:20px;
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    background-color: transparent;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 150px;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+    transform: translate(599px,180px);
+    border:white 5px solid;
+    
+}
+
+h2:hover{
+    border-radius: 30px;
+    box-shadow: rgb(255, 153, 0) 0px 22px 70px 4px;
+    
+    border: white 5px solid;
+        
+}
+
+
+
+#fot_1{
+    color: white;
+    text-align: right;
+    transform: translate(-10px,28px);
+    
+}
+
+#fot_2{
+    
+    color: white;
+    transform: translate(-10px,100px);
+    
+    opacity:0% ;
+    transition: 0.3s;
+    transition-timing-function:ease-in;
+    text-align: right;
+    transform: translate(0px,40px);  
+    
+   
+    
+}
+
+footer:hover #fot_2{
+   
+    opacity: 100%;
+    
+   
+}
+
+#fot_3{
+    color:white;
+    
+    text-align: right;
+    
+    opacity:0%;
+    transition: 0.2s;
+    transition-timing-function:ease-in;
+}
+
+footer:hover #fot_3{
+    transform: translate(0px,60px);  
+    opacity: 100%;
+    
+   
+}
+
+
+
+footer{
+    background-color: black;
+    transform: translate(-8px,267px);
+    width: 1366px;
+    position: absolute;
+    height:118px;
+    transition: 0.15s;
+    transition-timing-function:ease-in;
+    line-height: 0px;
+    
+}
+
+footer:hover{
+    
+   
+     height:190px;
+     transform: translate(-8px,195px);
+    
+    
+   
+}
+
+
+footer:hover p{
+     line-height: 20px;
+}
+
+
+
+
+/*
+#social-img{
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    transform: translate(9px,-40px);
+    transition: 0.1s;
+    transition-timing-function:ease-in;
+    background-color: green;
+    
+}
+
+footer:hover #social-img{
+    opacity: 100%;
+}*/

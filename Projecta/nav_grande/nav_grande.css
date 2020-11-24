@@ -1,0 +1,132 @@
+body {
+  background-color: rgb(179, 255, 0);
+  background-repeat: no-repeat;
+  background-size: 5000px 650px;
+  height: 600px;
+}
+
+img{
+  height: 400px;
+  width: 400px;
+}
+
+#naves_pequeñas{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Stalinist One', cursive;
+  
+  width: 600px;
+  transform: translate(350px,20px);
+  
+}
+#logo{
+  display: flex;
+  width: 250px;
+  height: 150px;
+  transform: translate(1050px,-100px);
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+ 
+  border: transparent 5px solid;
+  border-radius: 30%;
+  
+}
+#logo:hover{
+  border: skyblue 5px solid;
+  padding-left:20px ;
+  background-color: red;
+  padding-right: 20px;
+}
+
+#div-nav-peq-1 {
+  width: 400px;
+  height: 433px;
+  line-height: 0px;
+  color: transparent; font-size: 50px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+  font-size: 20px;
+  display: flex;
+  
+  
+
+  }
+  #div-nav-peq-1:hover {
+  line-height: 70px;
+  color: #575858;
+  }
+  #div-nav-peq-1 img{ float: left;
+  margin: 0 15px;
+  }
+
+
+#text-align-1{
+  transform: translate(0px,20px);
+}
+
+#div-nav-peq-2 {
+  
+  width: 400px;
+  height: 333px;
+  line-height:0px;
+  color: transparent;
+  font-size: 50px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+  font-size: 20px;
+  display: flex;
+  transform: translate(780px,0px);
+  
+  
+  }
+  #div-nav-peq-2:hover {
+  line-height: 60px;
+  color: #575858;
+    
+  }
+  #div-nav-peq-2 img{ float: left;
+  margin: 0 15px;
+  }
+
+  #text-align{
+    transform: translate(-720px,0px);
+  }
+
+#text-align-2{
+      transform: translate(-700px,-10px);
+    }
+
+
+  #div-nav-peq-3 {
+  
+    width: 400px;
+    height: 333px;
+    line-height:0px;
+    color: transparent;
+    font-size: 50px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    transition: 0.3s;
+    transition-timing-function: ease-out;
+    font-size: 20px;
+    display: flex;
+    
+    
+    }
+    #div-nav-peq-3:hover {
+    line-height: 60px;
+    color: #575858;
+      
+    }
+    #div-nav-peq-3 img{ float: left;
+    margin: 0 15px;
+    }
+
+    #text-align-3{
+      transform: translate(0px,70px);
+    }
