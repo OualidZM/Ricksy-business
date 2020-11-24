@@ -45,28 +45,50 @@ h2:hover{
 #fot_1{
     color: white;
     text-align: right;
-    transform: translate(0px,38px);
+    transform: translate(-10px,28px);
     
 }
-/*
+
 #fot_2{
-    transform: translate(0px,4px);
+    
     color: white;
-    text-align: right; 
+    transform: translate(-10px,100px);
+    
     opacity:0% ;
+    transition: 0.3s;
+    transition-timing-function:ease-in;
+    text-align: right;
+    transform: translate(0px,40px);  
+    
    
     
+}
+
+footer:hover #fot_2{
+   
+    opacity: 100%;
+    
+   
 }
 
 #fot_3{
     color:white;
     
     text-align: right;
-    transform: translate(0px,-30px);
+    
     opacity:0%;
+    transition: 0.2s;
+    transition-timing-function:ease-in;
 }
 
-*/
+footer:hover #fot_3{
+    transform: translate(0px,60px);  
+    opacity: 100%;
+    
+   
+}
+
+
 
 footer{
     background-color: black;
@@ -74,7 +96,7 @@ footer{
     width: 1366px;
     position: absolute;
     height:118px;
-    transition: 0.3s;
+    transition: 0.15s;
     transition-timing-function:ease-in;
     line-height: 0px;
     
@@ -95,23 +117,21 @@ footer:hover p{
      line-height: 20px;
 }
 
-footer :hover h2{
-     transform: translate(0px, -90px);
-}
+
+
+
 /*
-footer:hover ~ #fot_2{
-    transform: translate(-50px,-150px);  
-    opacity: 100%;
-    background-color:green;
-   
+#social-img{
+    height: 50px;
+    width: 50px;
+    opacity: 0;
+    transform: translate(9px,-40px);
+    transition: 0.1s;
+    transition-timing-function:ease-in;
+    background-color: green;
+    
 }
 
-footer:hover ~ #fot_3{
-    transform: translate(-50px,-150px);  
+footer:hover #social-img{
     opacity: 100%;
-    background-color:green;
-   
-}
-
-*/
-
+}*/
