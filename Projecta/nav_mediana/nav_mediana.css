@@ -26,7 +26,7 @@ img {
   transform: translate(1050px, -100px);
   transition: 0.2s;
   transition-timing-function: ease-out;
-
+  position: fixed;
   border: transparent 5px solid;
   border-radius: 30%;
 }

@@ -13,6 +13,7 @@ h1 {
 }
 
 h2 {
+  position: fixed;
   font-size: 20px;
   padding-top: 40px;
   text-align: center;
