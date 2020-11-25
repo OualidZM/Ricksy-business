@@ -6,7 +6,7 @@ body{
 
 
 
-#text-res-real{
+#text-hacer-reser{
     text-align:center;
     font-size:50px;
     font-family: 'Stalinist One', cursive;
@@ -25,8 +25,9 @@ body{
     font-size: 50px;
     color: white;
     border: white 0px solid;
-    transition: 0.1s;
+    transition: 0.2s;
     transition-timing-function: ease-out;
+    font-family: Arial, Helvetica, sans-serif;
     
     
 }
@@ -34,9 +35,8 @@ body{
 #buton-menu-princip:hover{
     
     border: black 5px  solid;
-    box-shadow: rgb(255, 153, 0) 0px 22px 70px 4px;
-    
     color: black;
+    font-family:'Times New Roman', Times, serif
 
     
    
