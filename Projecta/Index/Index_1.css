@@ -1,8 +1,9 @@
 body {
-  background-image: url(pictures/UFOO.jpg);
-  background-repeat: no-repeat;
-  background-size: 1600px 650px;
-  height: 600px;
+  background: url(pictures/UFOO.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 h1 {

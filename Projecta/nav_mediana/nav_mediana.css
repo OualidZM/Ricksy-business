@@ -1,8 +1,11 @@
 body {
   background-color: rgb(179, 255, 0);
-  background-repeat: no-repeat;
-  background-size: 5000px 650px;
-  height: 600px;
+  background: url(pictures/pexels-olenka-sergienko-5345033_720.jpg) no-repeat
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 img {
