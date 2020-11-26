@@ -1,7 +1,6 @@
 body {
-  background-color: rgb(179, 255, 0);
-  background: url(pictures/pexels-olenka-sergienko-5345033_720.jpg) no-repeat
-    center center fixed;
+  background: url(pictures/solar.jpg);
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -26,7 +25,7 @@ img {
   display: flex;
   width: 250px;
   height: 150px;
-  transform: translate(1050px, -100px);
+  transform: translate(1150px, -100px);
   transition: 0.2s;
   transition-timing-function: ease-out;
   position: fixed;
@@ -49,7 +48,7 @@ img {
   font-size: 50px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: bold;
   transition: 0.3s;
   transition-timing-function: ease-out;
   font-size: 20px;
@@ -57,7 +56,8 @@ img {
 }
 #div-nav-peq-1:hover {
   line-height: 70px;
-  color: #575858;
+  -webkit-text-stroke: 1px black;
+  color: white;
 }
 #div-nav-peq-1 img {
   float: left;
@@ -76,16 +76,17 @@ img {
   font-size: 50px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: bold;
   transition: 0.3s;
   transition-timing-function: ease-out;
   font-size: 20px;
   display: flex;
-  transform: translate(780px, 0px);
+  transform: translate(850px, 0px);
 }
 #div-nav-peq-2:hover {
   line-height: 60px;
-  color: #575858;
+  -webkit-text-stroke: 1px black;
+  color: white;
 }
 #div-nav-peq-2 img {
   float: left;
@@ -108,7 +109,7 @@ img {
   font-size: 50px;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial, sans-serif;
-  font-weight: 300;
+  font-weight: bold;
   transition: 0.3s;
   transition-timing-function: ease-out;
   font-size: 20px;
@@ -116,7 +117,8 @@ img {
 }
 #div-nav-peq-3:hover {
   line-height: 60px;
-  color: #575858;
+  -webkit-text-stroke: 1px black;
+  color: white;
 }
 #div-nav-peq-3 img {
   float: left;
