@@ -1,12 +1,12 @@
+@media only screen and (min-width: 1200px) {
 body {
   background: url(../sel_nav/pictures/fondo--gala.jpg) no-repeat center center
     fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  transition: 0.1s;
-  transition-timing-function: ease-out;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  
 }
 
 #section_naves {
@@ -14,26 +14,30 @@ body {
   text-align: center;
   font-size: 40px;
   font-family: "Stalinist One", cursive;
-
-  width: 600px;
-  transform: translate(350px, 20px);
+  width: 900px;
+  transform: translate(170px, 20px);
+  position: fixed;
 }
+
 #logo {
   display: flex;
   width: 250px;
   height: 150px;
-  transform: translate(1050px, -100px);
-  transition: 0.3s;
-  transition-timing-function: ease-out;
+  transform: translate(1050px, 0px);
   position: fixed;
   border: transparent 5px solid;
   border-radius: 30%;
+  opacity: 30%;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+  
 }
 #logo:hover {
   border: skyblue 5px solid;
   padding-left: 20px;
   background-color: red;
   padding-right: 20px;
+  opacity: 100%;
 }
 
 #nau_P {
@@ -43,7 +47,7 @@ body {
   width: 250px;
   height: 330px;
   float: left;
-  transform: translate(50px, 80px);
+  transform: translate(50px, 220px);
   transition: 0.1s;
   transition-timing-function: ease-out;
   position: fixed;
@@ -75,7 +79,7 @@ body {
   width: 250px;
   height: 330px;
   float: left;
-  transform: translate(500px, 80px);
+  transform: translate(500px, 220px);
   transition: 0.1s;
   transition-timing-function: ease-out;
   position: fixed;
@@ -106,7 +110,7 @@ body {
   width: 250px;
   height: 330px;
   float: left;
-  transform: translate(900px, 80px);
+  transform: translate(900px, 220px);
   color: white;
   transition: 0.1s;
   transition-timing-function: ease-out;
@@ -129,3 +133,5 @@ body {
 #link-style-g {
   text-decoration: none;
 }
+}
+

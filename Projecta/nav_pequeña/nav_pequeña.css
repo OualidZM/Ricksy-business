@@ -1,5 +1,5 @@
 body {
-  background: url(pictures/solar.jpg);
+  background: url(pictures/fondo-naves.jpg);
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -26,11 +26,13 @@ img {
   width: 250px;
   height: 150px;
   transform: translate(1150px, -100px);
-  transition: 0.2s;
-  transition-timing-function: ease-out;
   position: fixed;
   border: transparent 5px solid;
   border-radius: 30%;
+  opacity: 40%;
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+  
 }
 
 #logo:hover {
@@ -38,6 +40,7 @@ img {
   padding-left: 20px;
   background-color: red;
   padding-right: 20px;
+  opacity: 100%;
 }
 
 #div-nav-peq-1 {
