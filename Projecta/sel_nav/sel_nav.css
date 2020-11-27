@@ -22,7 +22,7 @@ body {
   display: flex;
   width: 250px;
   height: 150px;
-  transform: translate(1050px, -100px);
+  transform: translate(950px, -100px);
   transition: 0.3s;
   transition-timing-function: ease-out;
   position: fixed;
