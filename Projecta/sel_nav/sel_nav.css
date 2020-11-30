@@ -1,142 +1,137 @@
-body{
-    background-image: url(../sel_nav/pictures/fondo--gala.jpg);
-    background-repeat: no-repeat;
-     background-size: 1400px 660px;
-     height:600px ;
-    transition: 0.1s;
-    transition-timing-function: ease-out;
-    
+@media only screen and (min-width: 1200px) {
+body {
+  background: url(../sel_nav/pictures/fondo--gala.jpg) no-repeat center center
+    fixed;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  
 }
 
-#section_naves{
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Stalinist One', cursive;
-    
-    width: 600px;
-    transform: translate(350px,20px);
-    
-}
-#logo{
-    display: flex;
-    width: 250px;
-    height: 150px;
-    transform: translate(1050px,-100px);
-    transition: 0.3s;
-    transition-timing-function: ease-out;
-    position: fixed;
-    border: transparent 5px solid;
-    border-radius: 30%;
-    
-}
-#logo:hover{
-    border: skyblue 5px solid;
-    padding-left:20px ;
-    background-color: red;
-    padding-right: 20px;
+#section_naves {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Stalinist One", cursive;
+  width: 900px;
+  transform: translate(170px, 20px);
+  position: fixed;
 }
 
-
-#nau_P{
-    background-color: transparent;
-    border-radius: 10%;
-    padding: 25px;
-    width:250px;
-    height:330px;
-    float: left;
-    transform: translate(50px,80px);
-    transition: 0.1s;
-    transition-timing-function: ease-out;
-    position:fixed;
-    
-    
+#logo {
+  display: flex;
+  width: 250px;
+  height: 150px;
+  transform: translate(1050px, 0px);
+  position: fixed;
+  border: transparent 5px solid;
+  border-radius: 30%;
+  opacity: 30%;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+  
+}
+#logo:hover {
+  border: skyblue 5px solid;
+  padding-left: 20px;
+  background-color: red;
+  padding-right: 20px;
+  opacity: 100%;
 }
 
-#nau_P:hover{
-    background-color: black;
-    border:white 5px solid;
-    
+#nau_P {
+  background-color: transparent;
+  border-radius: 10%;
+  padding: 25px;
+  width: 250px;
+  height: 330px;
+  float: left;
+  transform: translate(50px, 220px);
+  transition: 0.1s;
+  transition-timing-function: ease-out;
+  position: fixed;
 }
 
-#text_nav_peq{
-    color: white;
-    text-align: center;
-    width: 290px;
-    transform: translate(-15px,120px);
-    font-weight:lighter;
-    font-family: 'Stalinist One', cursive;
-    font-size: 20px;
+#nau_P:hover {
+  background-color: black;
+  border: white 5px solid;
 }
 
-#link-style-p{
-    text-decoration: none;
+#text_nav_peq {
+  color: white;
+  text-align: center;
+  width: 290px;
+  transform: translate(-15px, 120px);
+  font-weight: lighter;
+  font-family: "Stalinist One", cursive;
+  font-size: 20px;
 }
 
-
-#nau_M{
-    background-color: transparent;
-    border-radius: 10%;
-    padding: 25px;
-    width:250px;
-    height:330px;
-    float: left;
-    transform: translate(500px,80px);
-    transition: 0.1s;
-    transition-timing-function: ease-out;
-    position:fixed;
-    
-    
+#link-style-p {
+  text-decoration: none;
 }
 
-#nau_M:hover{
-    background-color: black;
-    border:white 5px solid;
-    
+#nau_M {
+  background-color: transparent;
+  border-radius: 10%;
+  padding: 25px;
+  width: 250px;
+  height: 330px;
+  float: left;
+  transform: translate(500px, 220px);
+  transition: 0.1s;
+  transition-timing-function: ease-out;
+  position: fixed;
 }
 
-#text_nav_med{
-    color: white;
-    text-align: center;
-    transform: translate(0px,130px);
-    font-weight:lighter ;
-    font-family: 'Stalinist One', cursive;
-    font-size: 20px;
+#nau_M:hover {
+  background-color: black;
+  border: white 5px solid;
 }
 
-#link-style-m{
-    text-decoration: none;
+#text_nav_med {
+  color: white;
+  text-align: center;
+  transform: translate(0px, 130px);
+  font-weight: lighter;
+  font-family: "Stalinist One", cursive;
+  font-size: 20px;
 }
 
-#nau_G{
-    background-color: transparent;
-    border-radius: 10%;
-    padding: 25px;
-    width:250px;
-    height:330px;
-    float: left;
-    transform: translate(900px,80px);
-    color: white;
-    transition: 0.1s;
-    transition-timing-function: ease-out;
+#link-style-m {
+  text-decoration: none;
 }
 
-#nau_G:hover{
-    background-color: black;
-    border:white 5px solid;
-    
+#nau_G {
+  background-color: transparent;
+  border-radius: 10%;
+  padding: 25px;
+  width: 250px;
+  height: 330px;
+  float: left;
+  transform: translate(900px, 220px);
+  color: white;
+  transition: 0.1s;
+  transition-timing-function: ease-out;
 }
 
-#text_nav_gra{
-    color: white;
-    text-align: center;
-    transform: translate(0px,140px);
-    font-weight:lighter ;
-    font-family: 'Stalinist One', cursive;
-    font-size: 20px;
+#nau_G:hover {
+  background-color: black;
+  border: white 5px solid;
 }
 
-#link-style-g{
-    text-decoration: none;
+#text_nav_gra {
+  color: white;
+  text-align: center;
+  transform: translate(0px, 140px);
+  font-weight: lighter;
+  font-family: "Stalinist One", cursive;
+  font-size: 20px;
+}
+
+#link-style-g {
+  text-decoration: none;
+}
 }
 
