@@ -1,13 +1,13 @@
 import urllib.request
 
-content = ''
+#content = ''
 
 
 def get_page(page):  # llegir html
     try:
         pagee = urllib.request.urlopen(page)
-        global content
         content = str(pagee.read())
+        return content
     except:
         raise ValueError('error')
 
@@ -27,8 +27,13 @@ def get_all_links(content):
     while True:
         url, endpos = get_next_target(content)
         if url:
-            links.append(url)
-            page = page[endpos:]
+            if url[0:8] == 'https://':
+                links.append(url)
+                content = content[endpos:]
+            else:
+                links.append('https://'+url)
+                content = content[endpos:]
+
         else:
             break
     return links
@@ -40,8 +45,8 @@ def union(p, q):
             p.append(e)
 
 
-def crawl_web(seed):
-    tocrawl = [seed]
+def crawl_web(page):
+    tocrawl = [page]
     crawled = []
     while tocrawl:
         page = tocrawl.pop()
@@ -55,6 +60,8 @@ def crawl_web(seed):
 
 if __name__ == "__main__":
 
-    get_page('https://oualidzm.github.io/Ricksy-business/Projecta/Index/Index_1.html')
-    get_next_target(content)
-    get_all_links(content)
+    # get_page('https://oualidzm.github.io/Ricksy-business/Projecta/Index/Index_1.html')
+    # get_next_target(content)
+    # get_all_links(content)
+    crawl_web(
+        'https://oualidzm.github.io/Ricksy-business/Projecta/Index/Index_1.html')
