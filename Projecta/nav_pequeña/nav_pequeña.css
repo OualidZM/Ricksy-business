@@ -25,7 +25,13 @@ img {
   display: flex;
   width: 250px;
   height: 150px;
+<<<<<<< HEAD
   transform: translate(1150px, -100px);
+=======
+  transform: translate(950px, -100px);
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+>>>>>>> 9adb501933bfae7e5617b6fa93e1d6af7dc119fd
   position: fixed;
   border: transparent 5px solid;
   border-radius: 30%;

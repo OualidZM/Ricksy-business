@@ -23,7 +23,13 @@ body {
   display: flex;
   width: 250px;
   height: 150px;
+<<<<<<< HEAD
   transform: translate(1050px, 0px);
+=======
+  transform: translate(950px, -100px);
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+>>>>>>> 9adb501933bfae7e5617b6fa93e1d6af7dc119fd
   position: fixed;
   border: transparent 5px solid;
   border-radius: 30%;
