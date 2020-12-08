@@ -73,6 +73,9 @@ def scrapper(page):  # page==link original
             scrap_target.append(page)
         else:
             continue
+    for i in scrap_target:
+        target = get_page(i)
+
         # start_data = target.find(':', initial_mark)
         # end_data = target.find('<', start_data)
         # data = target[start_data + 1:end_data]
