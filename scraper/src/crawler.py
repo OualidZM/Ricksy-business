@@ -28,7 +28,7 @@ def get_all_links(content):
     while True:
         url, endpos = get_next_target(content)
         if url:
-            if url[0:8] == 'https://oualidzm.github.io/Ricksy-business/web/':
+            if url[0:7] == 'https://':
                 links.append(url)
                 content = content[endpos:]
             else:
