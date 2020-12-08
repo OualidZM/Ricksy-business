@@ -1,6 +1,6 @@
 import urllib.request
 
-#content = ''
+# content = ''
 
 
 def get_page(page):  # llegir html
@@ -60,7 +60,7 @@ def crawl_web(page):
     return crawled
 
 
-def scrapper(page):  # page==link original
+def scrapper_target(page):  # page==link original
     # crida al crawler i agafa la llista de links // page==link original
     to_scrap = crawl_web(page)
     scrap_target = []  # datos que interesan
@@ -69,18 +69,35 @@ def scrapper(page):  # page==link original
         # converteix es link de page en un document que se pot llegir//page==ultim link de la llista "to_scrap"
         target = get_page(page)
         initial_mark = target.find('id="text-align-')
-        if initial_mark != -1:
-            scrap_target.append(page)
+        count = 0
+        while initial_mark != -1:
+            if count <= 11:
+                # target = scrapper_target(get_page(page))
+                start_data = target.find(':', initial_mark)
+                end_data = target.find('<', start_data)
+                data = target[start_data + 1:end_data]
+                scrap_target.append(data)
+                initial_mark = start_data+1
+                count += 1
+            else:
+                break
         else:
             continue
-    for i in scrap_target:
-        target = get_page(i)
+    print(scrap_target)
 
-        # start_data = target.find(':', initial_mark)
-        # end_data = target.find('<', start_data)
-        # data = target[start_data + 1:end_data]
-        # scrap_target.append(data)
-        # initial_mark = start_data+1
+
+# Nombre =
+
+# Plazas =
+# Alcance =
+# Precio =
+
+# target = scrapper_target(page)
+# start_data = target.find(':', initial_mark)
+# end_data = target.find('<', start_data)
+# data = target[start_data + 1:end_data]
+# scrap_target.append(data)
+# initial_mark = start_data+1
 
 
 if __name__ == "__main__":
@@ -88,5 +105,5 @@ if __name__ == "__main__":
     # get_page('https://oualidzm.github.io/Ricksy-business/Projecta/Index/Index_1.html')
     # get_next_target(content)
     # get_all_links(content)
-    scrapper(
+    scrapper_target(
         'https://oualidzm.github.io/Ricksy-business/web/Index/Index_1.html')
