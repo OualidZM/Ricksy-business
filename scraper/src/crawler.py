@@ -60,10 +60,22 @@ def crawl_web(page):
     return crawled
 
 
+def scrapper(page):
+    to_scrap = crawl_web(page)
+    scrap_target = []
+    while to_scrap:
+        page = to_scrap.pop()
+        target = get_page(page)
+        if target.find('id="text-align-') != -1:
+            scrap_target.append(target)
+        else:
+            continue
+
+
 if __name__ == "__main__":
 
     # get_page('https://oualidzm.github.io/Ricksy-business/Projecta/Index/Index_1.html')
     # get_next_target(content)
     # get_all_links(content)
-    crawl_web(
+    scrapper(
         'https://oualidzm.github.io/Ricksy-business/web/Index/Index_1.html')
