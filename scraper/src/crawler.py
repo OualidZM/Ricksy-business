@@ -28,7 +28,7 @@ def get_all_links(content):
     while True:
         url, endpos = get_next_target(content)
         if url:
-            if url[0:8] == 'https://oualidzm.github.io/Ricksy-business/web/':
+            if url[0:7] == 'https://':
                 links.append(url)
                 content = content[endpos:]
             else:
@@ -60,10 +60,30 @@ def crawl_web(page):
     return crawled
 
 
+def scrapper(page):  # page==link original
+    # crida al crawler i agafa la llista de links // page==link original
+    to_scrap = crawl_web(page)
+    scrap_target = []  # datos que interesan
+    while to_scrap:  # 'mentres hi hagi links a to_scrap...'
+        page = to_scrap.pop()  # agafa s'ultim link de to_scrap (desapareix de to_scrap)//cambiam variable page. page == to_scrap.pop() (ultim link de la llista "to_scrap")
+        # converteix es link de page en un document que se pot llegir//page==ultim link de la llista "to_scrap"
+        target = get_page(page)
+        initial_mark = target.find('id="text-align-')
+        if initial_mark != -1:
+            scrap_target.append(page)
+        else:
+            continue
+        # start_data = target.find(':', initial_mark)
+        # end_data = target.find('<', start_data)
+        # data = target[start_data + 1:end_data]
+        # scrap_target.append(data)
+        # initial_mark = start_data+1
+
+
 if __name__ == "__main__":
 
     # get_page('https://oualidzm.github.io/Ricksy-business/Projecta/Index/Index_1.html')
     # get_next_target(content)
     # get_all_links(content)
-    crawl_web(
+    scrapper(
         'https://oualidzm.github.io/Ricksy-business/web/Index/Index_1.html')
