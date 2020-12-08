@@ -15,7 +15,10 @@ def get_page(page):  # llegir html
 
 
 def get_next_target(content):
+
+    start_link = content.find('<a href=')
     start_link = content.find('<a')
+
     if start_link == -1:
         return None, 0
     start_of_link = content.find('href=', start_link)
@@ -23,6 +26,12 @@ def get_next_target(content):
     end_quote = content.find('"', start_quote + 1)
     url = content[start_quote + 1:end_quote]
     return url, end_quote
+
+
+def union(p, q):
+    for e in q:
+        if e not in p:
+            p.append(e)
 
 
 def get_all_links(content):
@@ -88,19 +97,7 @@ def scrapper_target(page):  # page==link original
     return scrap_target
 
 
-def mongo(nave):
-    client = pymongo.MongoClient(
-        "mongodb+srv://m001-student:123456789mongo@sandbox.gmy0y.mongodb.net/?retryWrites=true&w=majority")
-    db = client.naves
-    col = db.test_ovni
-    return col.insert_one(nave)
-# selecionamos la bbdd
-
-
-# selecionamos la collecion
-
-
-def target_dicctionary(page):
+def target_dictionary(page):
     scrap_list = [scrapper_target(page)]
     if scrap_list:
         list = []
@@ -119,13 +116,27 @@ def target_dicctionary(page):
                 elem += 1
                 nave = {'Nombre': nombre, 'Plazas': plazas,
                         'Alcance': alcance, 'Precio': precio}
-                print(nave)
                 mongo(nave)
+                print(nave)
+
             else:
                 break
 
 
+def mongo(nave):
+    client = pymongo.MongoClient(
+        "mongodb+srv://m001-student:123456789mongo@sandbox.gmy0y.mongodb.net/?retryWrites=true&w=majority")
+    db = client.naves  # db
+    collection_ovni = db.ofertas  # coll
+    x = collection_ovni.insert_one(nave)
+    return x
+
+
+    # client = pymongo.MongoClient("mongodb+srv://m001-student:123456789mongo@sandbox.gmy0y.mongodb.net/?retryWrites=true&w=majority")
+    # db = client.naves
+    # col = db.test_ovni
+    # return col.insert_one(nave)
 if __name__ == "__main__":
 
-    target_dicctionary(
+    target_dictionary(
         'https://oualidzm.github.io/Ricksy-business/web/Index/Index_1.html')
