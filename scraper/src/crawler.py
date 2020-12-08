@@ -1,9 +1,8 @@
 import urllib.request
-from pymongo import MongoClient
+import pymongo
 from bson.json_util import dumps
 from pymongo.errors import ConnectionFailure
-
-# content = ''
+import dns
 
 
 def get_page(page):  # llegir html
@@ -89,6 +88,18 @@ def scrapper_target(page):  # page==link original
     return scrap_target
 
 
+def mongo(nave):
+    client = pymongo.MongoClient(
+        "mongodb+srv://m001-student:123456789mongo@sandbox.gmy0y.mongodb.net/?retryWrites=true&w=majority")
+    db = client.naves
+    col = db.test_ovni
+    return col.insert_one(nave)
+# selecionamos la bbdd
+
+
+# selecionamos la collecion
+
+
 def target_dicctionary(page):
     scrap_list = [scrapper_target(page)]
     if scrap_list:
@@ -109,39 +120,9 @@ def target_dicctionary(page):
                 nave = {'Nombre': nombre, 'Plazas': plazas,
                         'Alcance': alcance, 'Precio': precio}
                 print(nave)
-                
+                mongo(nave)
             else:
                 break
-
-
-def mongo(nave):
-    
-
-# from bson.objectid import ObjectId
-# from bson.errors import InvalidId
-
-uri = "mongodb+srv://m001-student:<password>@sandbox.gmy0y.mongodb.net/<dbname>?retryWrites=true&w=majority"
-client = MongoClient(uri)
-
-# selecionamos la bbdd
-
-nav_ovnis = client.nav_ovni
-
-# selecionamos la collecion
-
-nav_ovni = nav_ovnis.naves
-
-# hace la limpieza antes de la collecion antes de subir
-
-
-
-
-insertOne{
-    nave
-}
-
-
-# user.drop()
 
 
 if __name__ == "__main__":
