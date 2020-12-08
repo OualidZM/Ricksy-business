@@ -1,0 +1,47 @@
+body{
+    background-color: yellowgreen;
+}
+
+
+
+
+
+#text-hacer-reser{
+    text-align:center;
+    font-size:50px;
+    font-family: 'Stalinist One', cursive;
+    width: 900px;
+    transform: translate(230px,156px);
+}
+
+#buton-menu-princip{
+    transform: translate(470px,200px);
+    background-color: transparent;
+    width: 360px;
+    text-align: center;
+    padding: 10px;
+    padding-left: 20px; 
+    padding-right: 20px; 
+    font-size: 50px;
+    color: white;
+    border: white 0px solid;
+    transition: 0.2s;
+    transition-timing-function: ease-out;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+#buton-menu-princip:hover{
+    
+    border: black 5px  solid;
+    color: black;
+    font-family:'Times New Roman', Times, serif
+
+    
+   
+}
+
+a{
+    text-decoration: none;
+}
