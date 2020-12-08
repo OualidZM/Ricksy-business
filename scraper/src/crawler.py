@@ -13,10 +13,11 @@ def get_page(page):  # llegir html
 
 
 def get_next_target(content):
-    start_link = content.find('<a href=')
+    start_link = content.find('<a')
     if start_link == -1:
         return None, 0
-    start_quote = content.find('"', start_link)
+    start_of_link = content.find('href=', start_link)
+    start_quote = content.find('"', start_of_link)
     end_quote = content.find('"', start_quote + 1)
     url = content[start_quote + 1:end_quote]
     return url, end_quote
@@ -27,11 +28,12 @@ def get_all_links(content):
     while True:
         url, endpos = get_next_target(content)
         if url:
-            if url[0:8] == 'https://':
+            if url[0:8] == 'https://oualidzm.github.io/Ricksy-business/web/':
                 links.append(url)
                 content = content[endpos:]
             else:
-                links.append('https://'+url)
+                links.append(
+                    'https://oualidzm.github.io/Ricksy-business/web'+url[2:])
                 content = content[endpos:]
 
         else:
@@ -64,4 +66,4 @@ if __name__ == "__main__":
     # get_next_target(content)
     # get_all_links(content)
     crawl_web(
-        'https://oualidzm.github.io/Ricksy-business/Projecta/Index/Index_1.html')
+        'https://oualidzm.github.io/Ricksy-business/web/Index/Index_1.html')
