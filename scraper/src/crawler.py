@@ -63,7 +63,7 @@ def crawl_web(page):
 def scrapper_target(page):  # page==link original
     # crida al crawler i agafa la llista de links // page==link original
     to_scrap = crawl_web(page)
-    scrap_target = []  # datos que interesan
+    scrap_target = []  # datos que interesan(pagines de ses naus)
     while to_scrap:  # 'mentres hi hagi links a to_scrap...'
         page = to_scrap.pop()  # agafa s'ultim link de to_scrap (desapareix de to_scrap)//cambiam variable page. page == to_scrap.pop() (ultim link de la llista "to_scrap")
         # converteix es link de page en un document que se pot llegir//page==ultim link de la llista "to_scrap"
@@ -83,11 +83,51 @@ def scrapper_target(page):  # page==link original
                 break
         else:
             continue
-    print(scrap_target)
+    return scrap_target
+
+
+def target_dicctionary(page):
+    scrap_list = [scrapper_target(page)]
+    if scrap_list:
+        list = []
+        start = 0
+        end = 4
+        elem = 0
+        while len(list) < 9:
+            list.append(scrap_list[0][start:end])
+            if len(list[0]) != 0:
+                start += 4
+                end += 4
+                nombre = list[elem][0]
+                plazas = int(list[elem][1])
+                alcance = list[elem][2]
+                precio = list[elem][3]
+                elem += 1
+                nave = {'Nombre': nombre, 'Plazas': plazas,
+                        'Alcance': alcance, 'Precio': precio}
+                print(nave)
+            else:
+                break
+
+
+# def dictionary_list(page):
+#     scrap_target = scrapper_target(page)
+#     if scrap_target:
+#         list = []
+#         start = 0
+#         end = 4
+#         while len(list) < 2:
+#             list.append(scrap_target[start:end])
+#             if len(list[0]) != 0:
+#                 start += 4
+#                 end += 4
+#                 list.pop()
+#             else:
+#                 break
+#     print(scrap_target)
 
 
 # Nombre =
-
 # Plazas =
 # Alcance =
 # Precio =
@@ -98,12 +138,10 @@ def scrapper_target(page):  # page==link original
 # data = target[start_data + 1:end_data]
 # scrap_target.append(data)
 # initial_mark = start_data+1
-
-
 if __name__ == "__main__":
 
     # get_page('https://oualidzm.github.io/Ricksy-business/Projecta/Index/Index_1.html')
     # get_next_target(content)
     # get_all_links(content)
-    scrapper_target(
+    target_dicctionary(
         'https://oualidzm.github.io/Ricksy-business/web/Index/Index_1.html')
