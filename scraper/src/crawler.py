@@ -1,4 +1,7 @@
 import urllib.request
+from pymongo import MongoClient
+from bson.json_util import dumps
+from pymongo.errors import ConnectionFailure
 
 # content = ''
 
@@ -106,42 +109,42 @@ def target_dicctionary(page):
                 nave = {'Nombre': nombre, 'Plazas': plazas,
                         'Alcance': alcance, 'Precio': precio}
                 print(nave)
+                
             else:
                 break
 
 
-# def dictionary_list(page):
-#     scrap_target = scrapper_target(page)
-#     if scrap_target:
-#         list = []
-#         start = 0
-#         end = 4
-#         while len(list) < 2:
-#             list.append(scrap_target[start:end])
-#             if len(list[0]) != 0:
-#                 start += 4
-#                 end += 4
-#                 list.pop()
-#             else:
-#                 break
-#     print(scrap_target)
+def mongo(nave):
+    
+
+# from bson.objectid import ObjectId
+# from bson.errors import InvalidId
+
+uri = "mongodb+srv://m001-student:<password>@sandbox.gmy0y.mongodb.net/<dbname>?retryWrites=true&w=majority"
+client = MongoClient(uri)
+
+# selecionamos la bbdd
+
+nav_ovnis = client.nav_ovni
+
+# selecionamos la collecion
+
+nav_ovni = nav_ovnis.naves
+
+# hace la limpieza antes de la collecion antes de subir
 
 
-# Nombre =
-# Plazas =
-# Alcance =
-# Precio =
 
-# target = scrapper_target(page)
-# start_data = target.find(':', initial_mark)
-# end_data = target.find('<', start_data)
-# data = target[start_data + 1:end_data]
-# scrap_target.append(data)
-# initial_mark = start_data+1
+
+insertOne{
+    nave
+}
+
+
+# user.drop()
+
+
 if __name__ == "__main__":
 
-    # get_page('https://oualidzm.github.io/Ricksy-business/Projecta/Index/Index_1.html')
-    # get_next_target(content)
-    # get_all_links(content)
     target_dicctionary(
         'https://oualidzm.github.io/Ricksy-business/web/Index/Index_1.html')
