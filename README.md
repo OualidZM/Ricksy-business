@@ -1,8 +1,8 @@
 # Página para reservar naves
 
-## En este proyecto lo que hemos hecho es una página que nos permite poder hacer una o mas reservas de naves en la página.
-## La sección de naves se dividira en diferentes partes: Ligeras,Medianas,Grandes.
-## En cada sección habra tres diferentes naves con diferentes especificaciones.
+# En este proyecto lo que hemos hecho es una página que nos permite poder hacer una o mas reservas de naves en la página.
+# La sección de naves se dividira en diferentes partes: Ligeras,Medianas,Grandes.
+# En cada sección habra tres diferentes naves con diferentes especificaciones.
 #
 #
 # Instrucciones para poder descargar  el repositorio y poner-lo en marcha:
