@@ -115,7 +115,7 @@
 
 #
 
-- Link que utilizaremos para el programa python app.py(Crawler / Scraper)       
+- Link que utilizaremos para el programa python **app.py** (Crawler / Scraper)       
 ##
     
     https://oualidzm.github.io/Ricksy-business/web/Index/Index_1.html
