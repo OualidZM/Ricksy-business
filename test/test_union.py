@@ -1,4 +1,4 @@
-from ..src.crawler import union
+from src.app import union
 import pytest
 
 
