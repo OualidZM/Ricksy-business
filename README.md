@@ -1,4 +1,4 @@
-# __Página para reservar naves__
+# __PÁGINA PARA RESERVAR NAVES GALÁCTICAS__
 
 #### En este proyecto lo que hemos hecho es una página que nos permite poder hacer una o más reservas de naves.
 #### La sección de naves se dividirá en diferentes Secciones: Ligeras, Medianas, Grandes.
