@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "5fd05a3e19bcd275349f916d"
+  },
+  "Nombre": "X11.C_3.0",
+  "Plazas": 2,
+  "Alcance": "Saturno",
+  "Precio": "150Picrat"
+},{
+  "_id": {
+    "$oid": "5fd05a3f19bcd275349f916f"
+  },
+  "Nombre": "F.L.Y.",
+  "Plazas": 1,
+  "Alcance": "SistemaSolar",
+  "Precio": "200Picrat"
+},{
+  "_id": {
+    "$oid": "5fd05a5519bcd275349f9171"
+  },
+  "Nombre": "fl_Terra.X05",
+  "Plazas": 2,
+  "Alcance": "SistemaAlfaCentauri",
+  "Precio": "400Picrat"
+},{
+  "_id": {
+    "$oid": "5fd05a5619bcd275349f9173"
+  },
+  "Nombre": "Xx7.C_7.0",
+  "Plazas": 1,
+  "Alcance": "SistemaAlfaCentauri/EpsilonEridani",
+  "Precio": "700Picrats"
+},{
+  "_id": {
+    "$oid": "5fd05a5819bcd275349f9175"
+  },
+  "Nombre": "Tp300_D0.1",
+  "Plazas": 2,
+  "Alcance": "SistemaTauCeti",
+  "Precio": "1300Picrats"
+},{
+  "_id": {
+    "$oid": "5fd05a5919bcd275349f9177"
+  },
+  "Nombre": "F3.rr_4.rr1",
+  "Plazas": 2,
+  "Alcance": "SistemaTauCeti",
+  "Precio": "1600Picrats"
+},{
+  "_id": {
+    "$oid": "5fd05a6e19bcd275349f9179"
+  },
+  "Nombre": "M.Alfa_spd",
+  "Plazas": 10,
+  "Alcance": "SistemaTauCeti",
+  "Precio": "2200Picrats"
+},{
+  "_id": {
+    "$oid": "5fd05a8419bcd275349f917b"
+  },
+  "Nombre": "Tp300_D0.x20",
+  "Plazas": 25,
+  "Alcance": "SistemaGilese674",
+  "Precio": "3000Picrats"
+},{
+  "_id": {
+    "$oid": "5fd05a9a19bcd275349f917d"
+  },
+  "Nombre": "x3L.Atlas",
+  "Plazas": 40,
+  "Alcance": "ViaLactea",
+  "Precio": "7.500Picrats"
+}]
