@@ -79,9 +79,23 @@
 
 # __Funcionamiento del programa__
 
-    El programa se divide en dos partes, el Crawler y el Scraper,
-    El Crawler se dedicará a recoger todos los links que hay en la página y los devolvera en un diccionario, seguidamente al obtener todos los links podremos utilizar el scrapper para poder sacar de cada link la información que a nosotros nos sirva, en este caso a nosotros la información que nos importa son las especificaciones de la nave ligera, la nave normal y la nave grande, para eso lo que tenemos que hacer, es hacer un filtro que solo coja los tres link: ligera, mediana, grande.
-    De cada uno devolverá los valores sin los tags del html "<>" ni nada por el estilo, solo el texto, y finalmente esa información la subiremos al MongoDB
+    El programa se divide en dos partes,
+    el Crawler y el Scraper,
+    El Crawler se dedicará a recoger todos
+    los links que hay en la página y los 
+    devolvera en un diccionario, seguidamente
+    al obtener todos los links podremos utilizar
+    el scrapper para poder sacar de cada link la 
+    información que a nosotros nos sirva, en este 
+    caso a nosotros la información que nos importa
+    son las especificaciones de la nave ligera, la 
+    nave normal y la nave grande, para eso lo que 
+    tenemos que hacer, es hacer un filtro que solo
+    coja los tres link: ligera, mediana, grande.
+    De cada uno devolverá los valores sin los tags
+    del html "<>" ni nada por el estilo, solo el
+    texto, y finalmente esa información la subiremos
+    al MongoDB
 
 #
 # __Ejecución__
@@ -104,9 +118,14 @@
 
 # __Conclusion__
 
-    Para concluir, pensamos que el proyecto fue bastante interesante y aprendimos demasiado, pero una cosa mala es que tuvimos demasiados contratiempos
-    que nos perjudicaron al final.
-    Nos sirvió este proyecto para darnos cuenta de problemas mencionados anteriormente, que nos podrán servir para mejorar en el próximo.
+    Para concluir, pensamos que el proyecto fue
+    bastante interesante y aprendimos demasiado,
+    pero una cosa mala es que tuvimos demasiados
+    contratiempos que nos perjudicaron al final.
+    Nos sirvió este proyecto para darnos cuenta 
+    de problemas mencionados anteriormente, que
+    nos podrán servir para mejorar en el próximo.
+    
 # __Autores__
 
 ### Oualid Zaaj  y Toni Caimari
