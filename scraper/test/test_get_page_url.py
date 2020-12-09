@@ -1,4 +1,4 @@
-from src.crawler import get_page
+from src.get_page import get_page
 import pytest
 
 

@@ -1,4 +1,4 @@
-from src.crawler import get_all_links
+from src.get_all_links import get_all_links
 import pytest
 
 

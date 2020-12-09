@@ -1,8 +1,8 @@
 import urllib.request
 import pymongo
-from bson.json_util import dumps
-from pymongo.errors import ConnectionFailure
-import dns
+# from bson.json_util import dumps
+# from pymongo.errors import ConnectionFailure
+# import dns
 
 
 def get_page(page):  # llegir html
@@ -117,14 +117,13 @@ def target_dictionary(page):
                 break
 
 
-def mongo(nave):
-    client = pymongo.MongoClient(
-        "mongodb+srv://m001-student:123456789mongo@sandbox.gmy0y.mongodb.net/?retryWrites=true&w=majority")
-    db = client.naves  # db
-    collection_ovni = db.ofertas  # coll
-    x = collection_ovni.insert_one(nave)
-    return x
-
+# def mongo(nave):
+#     client = pymongo.MongoClient(
+#         "mongodb+srv://m001-student:123456789mongo@sandbox.gmy0y.mongodb.net/?retryWrites=true&w=majority")
+#     db = client.naves  # db
+#     collection_ovni = db.ofertas  # coll
+#     x = collection_ovni.insert_one(nave)
+#     return x
 
     # client = pymongo.MongoClient("mongodb+srv://m001-student:123456789mongo@sandbox.gmy0y.mongodb.net/?retryWrites=true&w=majority")
     # db = client.naves
