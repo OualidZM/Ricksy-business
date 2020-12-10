@@ -1,5 +1,6 @@
 body{
     background-color: yellowgreen;
+    background: url(pictures/space.jpg);
 }
 
 
@@ -12,6 +13,8 @@ body{
     font-family: 'Stalinist One', cursive;
     width: 900px;
     transform: translate(230px,156px);
+    -webkit-text-stroke: 2px black;
+  color: white;
 }
 
 #buton-menu-princip{
