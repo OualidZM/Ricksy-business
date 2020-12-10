@@ -1,4 +1,4 @@
-from ..src.crawler import get_page
+from services.app import get_page
 import pytest
 
 
