@@ -12,66 +12,136 @@
 
 ##  WINDOWS
 #
-- Crea un directorio y sitúate encima
+- Crea un directorio
 ##
-    mkdir Projecta
-    cd Projecta
+    mkdir Starship-Business
+
+![](../Ricksy-business/markdown_pictures/windows/crear_carpeta_windows.png)
+
+##
+
+
 #
+- sitúate encima
+##
+    cd Starship-Business
+
+![](../Ricksy-business/markdown_pictures/windows/situate_encima_windows.png)
+
+#
+
 - Clonar el repositorio:  
  ##
     git clone https://github.com/OualidZM/Ricksy-business.git
+
+![](../Ricksy-business/markdown_pictures/windows/git_clone_windows.png)    
 #
 
-- Instalamos **entorno Virtual** en nuestro ordenador:  
+- Instalamos el **entorno Virtual** en nuestro ordenador:  
 ##
     pip install virtualenv
 
+![](../Ricksy-business/markdown_pictures/windows/instalacion_env.png)  
+
 # 
+
+- Creamos el **entorno Virtual**:       
+##
+     C:\Users\q\Starship-Business\Ricksy-business>python -m venv env
+
+![](../Ricksy-business/markdown_pictures/windows/creacion_env.png)  
+
+#
 
 - Iniciamos el **entorno Virtual**:       
 ##
-     C:\Users\q\Desktop\Projecta\Ricksy-business>env\Scripts\activate
+     C:\Users\q\Starship-Business\Ricksy-business>env\Scripts\activate
+
+![](../Ricksy-business/markdown_pictures/windows/activacion_env.png)  
+
 #
 - Ahora instalamos todas las dependencias:
 ##
 
-    (env) C:\Users\q\Desktop\project\Ricksy-business>pip install -r requirements.txt
+    (env) C:\Users\q\Starship-Business\Ricksy-business>pip install -r requirements.txt
 
+
+![](../Ricksy-business/markdown_pictures/windows/requirement_windows.png)  
 
 
 # Linux
 
-- Crea un directorio y sitúate encima
+- Crea un directorio
 ##
-    mkdir Projecta
-    cd Projecta
+    mkdir Starship-Business
 
+
+
+
+![](../Ricksy-business/markdown_pictures/linux/Crear_carpeta_linux.png)
+#
+
+- Sitúate encima
+##
+    cd Starship-Business
+
+![](../Ricksy-business/markdown_pictures/linux/entramos_en_carpeta.png)
 #
 - Clonar repositorio:  
 ##  
     git clone https://github.com/OualidZM/Ricksy-business.git
-#
 
-
-- Instalamos **entorno Virtual** en nuestro ordenador:  
-#
-    $ sudo apt-get install python3.6-venv
+![](../Ricksy-business/markdown_pictures/linux/git_clone_linux.png)
 
 #
 
+
+- Instalamos pip en nuestro ordenador:  
+##
+    $ sudo apt install python3-pip
+
+
+![](../Ricksy-business/markdown_pictures/linux/instalacion-pip.png) 
+
+#
+
+
+
+ 
+- Instalamos el **entorno Virtual** en nuestro ordenador: 
+##
+    $ sudo apt-get install python3-venv -y
+
+![](../Ricksy-business/markdown_pictures/linux/download_venv.png)
+
+#
+
+
+
+
+- Creamos un  **entorno Virtual** en nuestro ordenador:  
+##
+    python3 -m venv venv
+
+![](../Ricksy-business/markdown_pictures/linux/crear_venv_linux.png)
+
+#
     
     
 
 - Iniciamos el **entorno Virtual**:       
 ##
-    $ python3.6 -m venv venv
     $ source venv/bin/activate
+
+![](../Ricksy-business/markdown_pictures/linux/venv_linux_iniciar.png)
 
 #
 
 - Ahora instalamos todas las dependencias:
 ##
     (venv) $ pip3 install -r requirements.txt
+
+![](../Ricksy-business/markdown_pictures/linux/requirements_linux.png)
 #
 
 
@@ -83,7 +153,7 @@
     el Crawler y el Scraper,
     El Crawler se dedicará a recoger todos
     los links que hay en la página y los 
-    devolvera en un diccionario, seguidamente
+    devolvera en una lista, seguidamente
     al obtener todos los links podremos utilizar
     el scrapper para poder sacar de cada link la 
     información que a nosotros nos sirva, en este 
@@ -95,23 +165,26 @@
     De cada uno devolverá los valores sin los tags
     del html "<>" ni nada por el estilo, solo el
     texto, y finalmente esa información la subiremos
-    al MongoDB
+    al MongoDB en forma de diccionario.
 
 #
 # __Ejecución__
 
-- Nos Situamos en la carpeta desde la terminal       
+- Nos Situamos en la carpeta desde la terminal si no lo estamos    
 ##
-    cd projecta
+    cd Starship-Business
     cd Ricksy-business
+
+![](../Ricksy-business/markdown_pictures/Ejecución/dirrecion_absoluta.png)
+
 
 #
 
-- Ejecutamos el archivo **app.py**       
+- Ejecutamos el archivo **app.py** 
 ##
     python app.py // python3 app.py
 
-
+![](../Ricksy-business/markdown_pictures/Ejecución/app.png)
 
 #
 
@@ -125,6 +198,26 @@
 #
 
 
+
+
+# __Diagrama de Componentes__
+
+![](../Ricksy-business/diagrama_de_componentes/diagrama_de_componentes.png)
+# __Clockify__
+
+![](../Ricksy-business/clockify/clockify.png)
+
+
+
+
+
+
+# __Herramientas Utilizadas__
+
+    vscode
+    gimp
+
+
 # __Conclusion__
 
     Para concluir, pensamos que el proyecto fue
@@ -134,6 +227,8 @@
     Nos sirvió este proyecto para darnos cuenta 
     de problemas mencionados anteriormente, que
     nos podrán servir para mejorar en el próximo.
+    
+#
     
 # __Autores__
 

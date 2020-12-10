@@ -1,4 +1,4 @@
-from services.app import get_page
+from src.app import get_page
 import pytest
 
 

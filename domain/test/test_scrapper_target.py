@@ -1,4 +1,4 @@
-from services.app import scrapper_target
+from src.app import scrapper_target
 import pytest
 
 

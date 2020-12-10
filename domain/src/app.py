@@ -3,6 +3,7 @@ import pymongo
 from bson.json_util import dumps
 from pymongo.errors import ConnectionFailure
 import dns
+import pytest
 
 
 def get_page(page):  # llegir html

@@ -1,4 +1,4 @@
-from services.app import get_next_target
+from src.app import get_next_target
 import pytest
 
 

@@ -1,6 +1,6 @@
 import pytest
-from services.app import get_all_links
-from services.app import get_page
+from src.app import get_all_links
+from src.app import get_page
 
 
 def nice_list(content):
