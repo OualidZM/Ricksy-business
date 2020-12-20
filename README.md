@@ -186,13 +186,6 @@
 
 ![Ejecutamos app.py](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/Ejecuci%C3%B3n/app.png)
 
-#
-
-- Link 
-    
-    https://oualidzm.github.io/Ricksy-business/web/Index/Index_1.html
-
-
 
 #
 
