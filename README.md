@@ -16,7 +16,7 @@
 ##
     mkdir Starship-Business
 
-![](../Ricksy-business/markdown_pictures/windows/crear_carpeta_windows.png)
+![Crea un directorio](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/windows/crear_carpeta_windows.png)
 
 ##
 
@@ -26,7 +26,7 @@
 ##
     cd Starship-Business
 
-![](../Ricksy-business/markdown_pictures/windows/situate_encima_windows.png)
+![sitúate encima](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/windows/situate_encima_windows.png)
 
 #
 
@@ -34,14 +34,14 @@
  ##
     git clone https://github.com/OualidZM/Ricksy-business.git
 
-![](../Ricksy-business/markdown_pictures/windows/git_clone_windows.png)    
+![Clonar repositorio](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/windows/git_clone_windows.png)    
 #
 
 - Instalamos el **entorno Virtual** en nuestro ordenador:  
 ##
     pip install virtualenv
 
-![](../Ricksy-business/markdown_pictures/windows/instalacion_env.png)  
+![Instalar entorno Virtual](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/windows/instalacion_env.png)  
 
 # 
 
@@ -49,7 +49,7 @@
 ##
      C:\Users\q\Starship-Business\Ricksy-business>python -m venv env
 
-![](../Ricksy-business/markdown_pictures/windows/creacion_env.png)  
+![crear entorno Virtual](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/windows/creacion_env.png)  
 
 #
 
@@ -57,7 +57,7 @@
 ##
      C:\Users\q\Starship-Business\Ricksy-business>env\Scripts\activate
 
-![](../Ricksy-business/markdown_pictures/windows/activacion_env.png)  
+![iniciamos entorno Virtual](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/windows/activacion_env.png)  
 
 #
 - Ahora instalamos todas las dependencias:
@@ -66,7 +66,7 @@
     (env) C:\Users\q\Starship-Business\Ricksy-business>pip install -r requirements.txt
 
 
-![](../Ricksy-business/markdown_pictures/windows/requirement_windows.png)  
+![dependencias](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/windows/requirement_windows.png)  
 
 
 # Linux
@@ -78,20 +78,20 @@
 
 
 
-![](../Ricksy-business/markdown_pictures/linux/Crear_carpeta_linux.png)
+![Crea un directorio](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/linux/Crear_carpeta_linux.png)
 #
 
 - Sitúate encima
 ##
     cd Starship-Business
 
-![](../Ricksy-business/markdown_pictures/linux/entramos_en_carpeta.png)
+![Sitúate encima](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/linux/entramos_en_carpeta.png)
 #
 - Clonar repositorio:  
 ##  
     git clone https://github.com/OualidZM/Ricksy-business.git
 
-![](../Ricksy-business/markdown_pictures/linux/git_clone_linux.png)
+![Clonar repositorio](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/linux/git_clone_linux.png)
 
 #
 
@@ -101,7 +101,7 @@
     $ sudo apt install python3-pip
 
 
-![](../Ricksy-business/markdown_pictures/linux/instalacion-pip.png) 
+![pip](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/linux/instalacion-pip.png) 
 
 #
 
@@ -112,7 +112,7 @@
 ##
     $ sudo apt-get install python3-venv -y
 
-![](../Ricksy-business/markdown_pictures/linux/download_venv.png)
+![entorno Virtual](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/linux/download_venv.png)
 
 #
 
@@ -123,7 +123,7 @@
 ##
     python3 -m venv venv
 
-![](../Ricksy-business/markdown_pictures/linux/crear_venv_linux.png)
+![Crear entorno Virtual](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/linux/crear_venv_linux.png)
 
 #
     
@@ -133,7 +133,7 @@
 ##
     $ source venv/bin/activate
 
-![](../Ricksy-business/markdown_pictures/linux/venv_linux_iniciar.png)
+![Iniciar entorno Virtual](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/linux/venv_linux_iniciar.png)
 
 #
 
@@ -141,7 +141,7 @@
 ##
     (venv) $ pip3 install -r requirements.txt
 
-![](../Ricksy-business/markdown_pictures/linux/requirements_linux.png)
+![dependencias](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/linux/requirements_linux.png)
 #
 
 
@@ -175,7 +175,7 @@
     cd Starship-Business
     cd Ricksy-business
 
-![](../Ricksy-business/markdown_pictures/Ejecución/dirrecion_absoluta.png)
+![cd directorio](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/Ejecuci%C3%B3n/dirrecion_absoluta.png)
 
 
 #
@@ -184,12 +184,11 @@
 ##
     python app.py // python3 app.py
 
-![](../Ricksy-business/markdown_pictures/Ejecución/app.png)
+![Ejecutamos app.py](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/Ejecuci%C3%B3n/app.png)
 
 #
 
-- Link que utilizaremos para el programa python **app.py** (Crawler / Scraper)       
-##
+- Link 
     
     https://oualidzm.github.io/Ricksy-business/web/Index/Index_1.html
 
@@ -202,10 +201,10 @@
 
 # __Diagrama de Componentes__
 
-![](../Ricksy-business/diagrama_de_componentes/diagrama_de_componentes.png)
+![Diagrama de Componentes](https://github.com/OualidZM/Ricksy-business/blob/master/diagrama_de_componentes/diagrama_de_componentes.png)
 # __Clockify__
 
-![](../Ricksy-business/clockify/clockify.png)
+![Clockify](https://github.com/OualidZM/Ricksy-business/blob/master/clockify/clockify.png)
 
 
 
@@ -216,6 +215,7 @@
 
     vscode
     gimp
+    Clockify
 
 
 # __Conclusion__
