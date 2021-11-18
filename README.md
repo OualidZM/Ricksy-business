@@ -32,7 +32,7 @@
 
 - Clonar el repositorio:  
  ##
-    git clone https://github.com/OualidZM/Ricksy-business.git
+    git clone https://github.com/OualidZM/Ricksy-business.gitofofor
 
 ![Clonar repositorio](https://github.com/OualidZM/Ricksy-business/blob/master/markdown_pictures/windows/git_clone_windows.png)    
 #
